@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external stylesheet -->
+</head>
+<body>
+    <header>
+        <h1>Event Registration</h1> <!-- Main header of the page -->
+    </header>
+    <main>
+        <section>
+            <h2 class="section-title">Registration Form for an Event</h2> <!-- Section title for registration form -->
+            
+            <form id="registrationForm"> <!-- Registration form -->
+                <label for="eventName">Event Name</label>
+                <input type="text" id="eventName" required> <!-- Input field for event name -->
+                
+                <label for="eventDate">Event Date</label>
+                <input type="date" id="eventDate" required> <!-- Input field for event date -->
+                
+                <label for="organizer">Organizer</label>
+                <input type="text" id="organizer" required> <!-- Input field for organizer's name -->
+                
+                <label for="capacity">Capacity</label>
+                <input type="number" id="capacity" min="1" required> <!-- Input field for event capacity -->
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" required> <!-- Input field for email -->
+                
+                <div class="btn-container">
+                    <button type="button" class="btn" onclick="addRegistration()">Add Registration</button> <!-- Button to add registration -->
+                </div>
+            </form>
+            <div id="errorMessage" class="error-message"></div> <!-- Error message display area -->
+        </section>
+        
+        <section id="eventTableSection">
+            <h2 class="Title2">Event Registrations</h2> <!-- Section title for event registrations -->
+            <p>Cost per capacity occupied: 15 Euros</p> <!-- Information about cost per capacity -->
+            <table id="eventTable"> <!-- Table to display event registrations -->
+                <thead>
+                    <tr>
+                        <th>Event Name</th> <!-- Table header: Event Name -->
+                        <th>Event Date</th> <!-- Table header: Event Date -->
+                        <th>Organizer</th> <!-- Table header: Organizer -->
+                        <th>Capacity</th> <!-- Table header: Capacity -->
+                        <th>Cost (Euros)</th> <!-- Table header: Cost in Euros -->
+                        <th>Email</th> <!-- Table header: Email -->
+                        <th>Actions</th> <!-- Table header: Actions -->
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- Table body will be dynamically populated with JavaScript -->
+                </tbody>
+            </table>
+            <button class="btn" onclick="printTable()">Print</button> <!-- Button to print the table -->
+        </section>
+        
+        <section id="statistics">
+            <h2>Statistics</h2> <!-- Section title for statistics -->
+            <p id="totalEvents">Total Events: 0</p> <!-- Display total number of events -->
+            <p id="averageCost">Average Cost: 0 Euros</p> <!-- Display average cost of events -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Event Registration System</p> <!-- Footer information -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode"></script> <!-- External script for QR code generation -->
+    <script src="app.js"></script> <!-- Custom JavaScript file for application logic -->
+</body>
+</html>

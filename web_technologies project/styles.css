@@ -1,0 +1,146 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://wallpapercave.com/wp/wp7488372.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px; /* Padding around the content */
+    color: #333; /* Default text color */
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px 8px 0 0; /* Rounded corners */
+    margin-bottom: 20px; /* Space below the header */
+}
+
+header h1 {
+    margin: 0; /* Remove margin for h1 inside header */
+}
+
+/* Main section styles */
+main {
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    padding: 20px; /* Padding around the main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Fixed position at the bottom */
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 8px 8px; /* Rounded corners */
+}
+
+/* Section styles */
+section {
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+    padding: 20px; /* Padding inside the section */
+    margin-bottom: 20px; /* Space below the section */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Box shadow for depth */
+}
+
+/* Section title styles */
+.section-title {
+    text-align: center; /* Center align section titles */
+    margin-bottom: 20px; /* Space below section titles */
+}
+
+/* Label styles */
+label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Form input styles */
+input[type="text"],
+input[type="date"],
+textarea,
+input[type="number"] {
+    width: 80%; /* Width of input fields */
+    padding: 8px; /* Padding inside input fields */
+    margin-bottom: 10px; /* Space below input fields */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Button styles */
+.btn {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    padding: 8px 16px; /* Padding inside the button */
+    cursor: pointer; /* Cursor style */
+    border-radius: 50px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+/* Title2 section styles */
+.Title2 {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px; /* Padding inside the Title2 section */
+    margin-bottom: 20px; /* Space below the Title2 section */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.9); /* Box shadow for depth */
+    text-align: center; /* Center align text */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Table width */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+table th,
+table td {
+    padding: 8px; /* Padding inside table cells */
+    text-align: left; /* Left align text in cells */
+    border: 1px solid #ccc; /* Border */
+}
+
+/* Error message styles */
+.error-message {
+    color: red; /* Error message text color */
+    margin-top: 10px; /* Space above error messages */
+}
+
+/* Print styles */
+@media print {
+    body * {
+        visibility: hidden; /* Hide all elements */
+    }
+    #eventTableSection, #eventTableSection * {
+        visibility: visible; /* Show the eventTableSection and its children */
+    }
+    #eventTableSection {
+        position: absolute; /* Position the section */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+    }
+}
