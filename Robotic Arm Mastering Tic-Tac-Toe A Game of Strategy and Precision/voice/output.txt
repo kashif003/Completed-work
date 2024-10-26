@@ -1,0 +1,36 @@
+sound_name_1 = "agent turn1.wav"
+sound_path_1 = "/home/vision2/Desktop/voice/agent turn1.wav"
+
+sound_name_2 = "agent turn3.wav"
+sound_path_2 = "/home/vision2/Desktop/voice/agent turn3.wav"
+
+sound_name_3 = "agent turn4.wav"
+sound_path_3 = "/home/vision2/Desktop/voice/agent turn4.wav"
+
+sound_name_4 = "agent win1.wav"
+sound_path_4 = "/home/vision2/Desktop/voice/agent win1.wav"
+
+sound_name_5 = "draw 1.wav"
+sound_path_5 = "/home/vision2/Desktop/voice/draw 1.wav"
+
+sound_name_6 = "hello1.wav"
+sound_path_6 = "/home/vision2/Desktop/voice/hello1.wav"
+
+sound_name_7 = "hello2.wav"
+sound_path_7 = "/home/vision2/Desktop/voice/hello2.wav"
+
+sound_name_8 = "hello3.wav"
+sound_path_8 = "/home/vision2/Desktop/voice/hello3.wav"
+
+sound_name_9 = "player turn2.wav"
+sound_path_9 = "/home/vision2/Desktop/voice/player turn2.wav"
+
+sound_name_10 = "player turn.wav"
+sound_path_10 = "/home/vision2/Desktop/voice/player turn.wav"
+
+sound_name_11 = "player win1.wav"
+sound_path_11 = "/home/vision2/Desktop/voice/player win1.wav"
+
+sound_name_12 = "player win3.wav"
+sound_path_12 = "/home/vision2/Desktop/voice/player win3.wav"
+
